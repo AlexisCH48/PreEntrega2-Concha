@@ -1,0 +1,185 @@
+/* importar fuente */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* resetear propiedades navegador */
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* color del fondo */
+body{
+    background-color: #E8E9ED;
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+.navbar{
+    background-color: #252627;
+}
+.navbar-brand{
+    color: #f1f1f3 !important;
+    font-size: 40px;
+}
+.navbar-toggler{
+    color: #f1f1f3 !important;
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.nav-link{
+    color: #f1f1f3 !important;
+}
+.nav-item{
+    margin: 20px;
+}
+
+/* Contenido incial */
+.jumbotron{
+    height: 600px;
+    background-image: url(../assets/img/imagen_principal.jpg);
+    color: #f1f1f3;
+    text-shadow: 0px 1px 4px #000;
+    background-position: center;
+    background-size: cover;
+}
+.jumbotron h1{
+    padding-top: 85px;
+    font-size: 60px;
+}
+
+.container{
+    padding: 40px 15px;
+}
+
+main h2{
+    padding-bottom: 50px;
+}
+
+.container-fluid{
+    padding: 15px;
+}
+
+
+.embed-responsive {
+    border: 5px solid #333;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+
+
+
+/* formulario de contacto */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 1px 1px 3px #000;
+    border-radius: 10px;
+}
+
+.formulario h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.formulario button{
+    background-color: #564e58 !important;
+    border: none;
+    font-size: 25px;
+    padding: 6px 20px;
+    box-shadow: 1px 2px 3px 1px #000;
+}
+
+.formulario button:hover{
+    background-color: #252627 !important;
+}
+
+
+/* footer */
+.pie-pagina{
+    background-color: #252627;
+    color: #f1f1f3;
+}
+
+.pie-pagina .item-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.pie-pagina .item-1 .caja figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .item-1 .caja figure a i{
+    color: #f1f1f3;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.pie-pagina .item-1 .caja h4{
+    margin: 10px 0px 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .item-1 .caja p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .item-1 .caja .redes{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+
+}
+.pie-pagina .item-1 .caja a{
+    color: #f1f1f3;
+    font-size: 40px;
+    margin: 0px 10px 0px 0px;
+    text-decoration: none;
+}
+
+.pie-pagina .item-2{
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pie-pagina .item-2 i{
+    font-size: 20px;
+    margin: 0px 10px;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 480px) {
+    .pie-pagina .item-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+

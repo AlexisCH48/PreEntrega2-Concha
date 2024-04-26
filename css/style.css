@@ -62,7 +62,6 @@ main h2{
     padding: 15px;
 }
 
-
 .embed-responsive {
     border: 5px solid #333;
     border-radius: 15px;
@@ -71,10 +70,61 @@ main h2{
 
 
 
+/* Galería de imagenes */
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 300px);
+    grid-gap: 30px;
+}
 
+.item {
+    background-position: center;
+    background-size: cover;
+    box-shadow: 1px 1px 3px #000;
+    border-radius: 10px;
+    transition: all 0.7s;
+    filter: grayscale(100%);
+}
+
+.item:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.item1{
+    background-image: url(../assets/img/imagen_galeria1.jpg);
+}
+
+.item2{
+    background-image: url(../assets/img/imagen_galeria2.jpg);
+}
+
+.item3{
+    background-image: url(../assets/img/imagen_galeria3.jpg);
+}
+
+.item4{
+    background-image: url(../assets/img/imagen_galeria4.jpg);
+}
+
+.item5{
+    background-image: url(../assets/img/imagen_galeria5.jpg);
+}
+
+.item6{
+    background-image: url(../assets/img/imagen_galeria6.jpg);
+}
+
+.item7{
+    background-image: url(../assets/img/imagen_galeria7.jpg);
+}
+
+.item8{
+    background-image: url(../assets/img/imagen_galeria8.jpg);
+}
 
 /* formulario de contacto */
-
 .formulario{
     display: flex;
     flex-direction: column;
@@ -171,8 +221,7 @@ main h2{
 }
 
 
-/* media queries */
-
+/* media queries footer */
 @media only screen and (max-width: 480px) {
     .pie-pagina .item-1{
         width: 90%;
@@ -182,4 +231,48 @@ main h2{
     }
 }
 
+/* media queries galería */
+@media only screen and (min-width: 480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 300px);
+    }
+}
 
+@media only screen and (min-width: 768px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/2; 
+    }
+    .item2{
+        grid-column: 3/4;
+        grid-row: 1/2; 
+    }
+    .item3{
+        grid-column: 1/2;
+        grid-row: 2/3;  
+    }
+    .item4{
+        grid-column: 2/4;
+        grid-row: 2/3;  
+    }
+    .item5{
+        grid-column: 1/3;
+        grid-row: 3/4; 
+    }
+    .item6{
+        grid-column: 3/4;
+        grid-row: 3/4; 
+    }
+    .item7{
+        grid-column: 1/2;
+        grid-row: 4/5; 
+    }
+    .item8{
+        grid-column: 2/4;
+        grid-row: 4/5; 
+    }
+}

@@ -36,7 +36,7 @@ body{
     margin: 20px;
 }
 
-/* Contenido incial */
+/* Contenido banner */
 .jumbotron{
     height: 600px;
     background-image: url(../assets/img/imagen_principal.jpg);
@@ -50,24 +50,41 @@ body{
     font-size: 60px;
 }
 
+/* Contenido destacado*/
 .container{
     padding: 40px 15px;
 }
 
-main h2{
-    padding-bottom: 50px;
+main h1,h2{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 0px 2px 3px #000;
 }
 
-.container-fluid{
-    padding: 15px;
+.card{
+    box-shadow: 1px 1px 3px #000;
 }
 
-.embed-responsive {
-    border: 5px solid #333;
+.card-body a{
+    background-color: #564e58 !important;
+    border: none;
+}
+
+.card-body a:hover{
+    background-color: #252627 !important;
+}
+
+.ratio, .embed-responsive-item, .carousel-inner{
+    box-shadow: 1px 1px 3px #000;
     border-radius: 15px;
-    overflow: hidden;
 }
 
+.carousel-inner > .carousel-item > img {
+    height: 80vh;
+    width: 100%;
+}
 
 
 /* Galería de imagenes */
@@ -134,11 +151,6 @@ main h2{
     margin: 15px;
     box-shadow: 1px 1px 3px #000;
     border-radius: 10px;
-}
-
-.formulario h1{
-    font-size: 50px;
-    margin-bottom: 30px;
 }
 
 .formulario button{
